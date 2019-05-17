@@ -1,0 +1,240 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.wrapper {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+header h1 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.profile-photo {
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+}
+
+a:hover {
+  color: green;
+}
+
+header,
+section,
+footer {
+  background-color: #fafafa;
+}
+
+.skills {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+nav li {
+  background-color: white;
+  margin-top: 4px;
+  padding: 15px 0;
+}
+
+header p {
+  color: #7f7f7f;
+  font-size: 18px;
+  line-height: 1.5em;
+  padding-bottom: 30px;
+}
+
+main h2 {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+figure {
+  margin: 30px 0;
+}
+
+figcaption {
+  color: #676668;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+h3 {
+  color: #2472aa;
+  font-family: 'Baloo Bhai', cursive;
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+.contact-info {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #b7babb;
+}
+
+.contact-info h2 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.contact-info h3 {
+  font-size: 16px;
+  color: #565859;
+  display: inline-block;
+}
+
+.contact-info p {
+  color: #7f7f7f;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+
+/* Mini Footer Menu */
+.bottom-footer {
+  position: relative;
+
+}
+.name {
+  float: left;
+}
+
+footer nav {
+  float: right;
+}
+footer nav ul {
+  margin: 0;
+}
+footer nav li {
+  background: #fafafa;
+  margin-top: 6px;
+  float: left;
+}
+footer nav a {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  nav li {
+    background-color: #fafafa;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 15px 20px;
+  }
+
+  .profile-photo {
+    width: 40%;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    margin-left: 14px;
+    float: right;
+  }
+
+  header h1 {
+    padding-top: 50px;
+  }
+
+  header p {
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  main h2 {
+    margin-top: 60px;
+  }
+
+  main li {
+    width: 49.6%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .contact-info {
+    padding: 40px 100px;
+  }
+
+  .footer-nav-mini {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  header h1 {
+    float: left;
+  }
+
+  header nav {
+    float: right;
+    margin-top: 30px;
+  }
+
+  header p {
+    padding-top: 20px;
+    font-size: 22px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  main li {
+    width: 33%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .contact-info {
+    padding: 40px 180px;
+  }
+
+  .contact-info h2 {
+    font-size: 20px;
+  }
+
+  .contact-info p {
+    font-size: 24px;
+  }
+}
